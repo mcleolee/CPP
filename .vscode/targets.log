@@ -10,13 +10,13 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Thu Aug 18 10:32:49 2022
+# Make data base, printed on Thu Aug 18 19:00:23 2022
 
 # Variables
 
 # automatic
- 
 <D = $(patsubst %/,%,$(dir $<))
+ 
 # automatic
 ?F = $(notdir $?)
 # automatic
@@ -83,6 +83,8 @@ MAKE = $(MAKE_COMMAND)
 MAKECMDGOALS := all
 # environment
 SHLVL = 1
+# environment
+BLOCKSIZE = 512
 # default
 MAKE_VERSION := 3.81
 # environment
@@ -118,11 +120,11 @@ XPC_SERVICE_NAME = application.com.microsoft.VSCode.21287608.21287615
 # automatic
 +F = $(notdir $+)
 # environment
+ 
 __CF_USER_TEXT_ENCODING = 0x1F6:0x19:0x34
 # environment
 COMMAND_MODE = unix2003
 # default
- 
 MAKEFILES := 
 # automatic
 <F = $(notdir $<)
@@ -141,13 +143,13 @@ MAKELEVEL := 0
 # environment
 CONDA_PREFIX = /Users/raven/miniconda3
 # environment
-VSCODE_PID = 21302
+VSCODE_PID = 36885
 # environment
 _CE_CONDA = 
 # environment
 LANG = C
 # variable set hash-table stats:
-# Load=65/1024=6%, Rehash=0, Collisions=2/85=2%
+# Load=66/1024=6%, Rehash=0, Collisions=2/86=2%
 
 # Pattern-specific Variable Values
 
@@ -155,9 +157,9 @@ LANG = C
 
 # Directories
 
-# . (device 16777229, inode 21907134): 9 files, no impossibilities.
+# . (device 16777229, inode 21907134): 13 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 13 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -211,11 +213,11 @@ GNUmakefile:
 #  A default, MAKEFILES, or -include/sinclude makefile.
 #  Implicit rule search has been done.
 #  File does not exist.
+ 
 #  File has been updated.
 #  Failed to be updated.
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/0=0%
- 
 
 # files hash-table stats:
 # Load=6/1024=1%, Rehash=0, Collisions=0/17=0%
@@ -230,6 +232,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Thu Aug 18 10:32:49 2022
+# Finished Make data base on Thu Aug 18 19:00:23 2022
 
  
