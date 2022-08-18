@@ -1,6 +1,7 @@
 {
   "files.associations": {
-    "__config": "c"
+    "__config": "c",
+    "reference.C": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
