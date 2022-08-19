@@ -4,8 +4,6 @@ using namespace std;
 
 int main()
 {   
-    int a,b;
-    cin >> a;
-    cin >> b;
+    int a = 1,b = 2;
     cout << demo.perimeter(a,b) << endl;
 }
