@@ -6,12 +6,6 @@ class demo{
 //     int a,b;
 public:
     int perimeter(int a,int b); 
-}demo;
-
-
-
-
-
-
+};
 
 #endif
