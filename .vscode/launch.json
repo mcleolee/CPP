@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": true,
       "externalConsole": false,
-      "cwd": "/Users/raven/GITHUB_REPOSITORY/CPP",
-      "program": "/Users/raven/GITHUB_REPOSITORY/CPP/build/Debug/outDebug",
+      "cwd": "/Users/raven/GITHUB_REPOSITORY/CPP/DEMO/src",
+      "program": "/Users/raven/GITHUB_REPOSITORY/CPP/DEMO/src/build/Debug/outDebug",
       "MIMode": "gdb"
     }
   ]
