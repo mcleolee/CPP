@@ -23,38 +23,36 @@ struct qwq
         cout << "the arr is ";
         for (int i = 0; i < len; i++)
         {
-            cout << arr[i] << " " ;
+            cout << arr[i] << " ";
         }
         cout << endl;
     }
-
     int sort()
     {
         cout << "---start to sort---" << endl;
         for (int i = 0; i < len; i++)
         {
-            for(int j=0; j<len - 1;j++)
+            for (int j = 0; j < len - 1; j++)
             {
-                int temp;
-                temp = arr[i];
-                arr[i] = arr[j];
-                arr[j] = temp;
+                if (arr[j] > arr[j + 1])
+                {
+                    int temp;
+                    temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
             }
         }
-        cout << "---end sorting---" << endl;
         print();
+        cout << "---end sorting---" << endl;
     }
-
-}qwq;
+} qwq;
 
 int main()
 {
     qwq.input();
     cout << "the length is " << qwq.len << endl;
-    
     qwq.print();
-
     qwq.sort();
-
     return 0;
 }
