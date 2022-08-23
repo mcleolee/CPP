@@ -1,48 +1,43 @@
 #include <iostream>
 using namespace std;
 
-template <typename t1,typename t2>
-t1 add(t1 a,t2 b)
-{
-    return a+b;
-}
-
-template <typename t>
+template <typename t,typename t_ptr>
 t sort(t a[])
 {
+
+    int len = 5;
+    // t a[];
     cout << "---start to sort---" << endl;
-        for (int i = 0; i < len; i++)
+    for (int i = 0; i < len - 1; i++)
+    {
+        for (int j = 0; j < len - 1 - i; j++)
         {
-            for (int j = 0; j < len - 1; j++)
+            if (a[j] > a[j + 1])
             {
-                if (arr[j] > arr[j + 1])
-                {
-                    int temp;
-                    temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
+                int temp;
+                temp = a[j];
+                a[j] = a[j + 1];
+                a[j + 1] = temp;
             }
         }
-        print();
-        cout << "---end sorting---" << endl;
+    }
+
+    for(int i=0;i<len;i++)
+    {
+        cout << a[i] << endl;
+    }
+    cout << "---end sorting---" << endl;
+
+    return 0;
 }
-
-
 
 int main()
 {
-    
-
-
-
-    cout << add(1,2) << endl;
-    cout << add(3.3,3.6) << endl;
-    cout << add('a',' ') << endl;
-    cout << add('A',1) << endl;
-    cout << add<int, int>('A',1) << endl;
-
-
+    // int len=5;
+    int a[5] = {2, 5, 6, 8, 4};
+    char b[5] = {'a', 'f', 'd', 'c', 'e'};
+    sort(a);
+    sort(b);
 
     return 0;
 }
