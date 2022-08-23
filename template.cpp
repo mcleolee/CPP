@@ -1,12 +1,11 @@
 #include <iostream>
 using namespace std;
 
-template <typename t,typename t_ptr>
+template <typename t>
 t sort(t a[])
 {
-
     int len = 5;
-    // t a[];
+    
     cout << "---start to sort---" << endl;
     for (int i = 0; i < len - 1; i++)
     {
