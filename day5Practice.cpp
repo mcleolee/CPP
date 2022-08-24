@@ -21,7 +21,7 @@ class Demo{
         {
             p = new T1[obj.len];
             len = obj.len;
-            for(int i = 0; i < len; i++)
+            for(int i = 0; i < len; i++)·
             {
                 p[i] = obj.p[i];
             }
